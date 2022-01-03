@@ -10,8 +10,9 @@ python def.py vcruntime140.dll
 ```
 会得到以下输出
 ![](https://raw.githubusercontent.com/famei/go-dllhijack/main/def.png)
-###将输出的内容复制到win.def内
-###新建一个bat脚本
+将输出的内容复制到win.def内
+
+新建一个bat脚本
 ```bat
 dlltool --output-exp win.exp --input-def win.def
 set GOOS=windows
@@ -19,7 +20,7 @@ set GOARCH=386
 set CGO_ENABLED=1
 go build -buildmode=c-shared -o vcruntime140.dll -ldflags="-extldflags=-Wl,{文件夹绝对路径}\win.exp -s -w"
 ```
-###会得到一个vcruntime140.dll文件
+会得到一个vcruntime140.dll文
 将正常的vcruntime140.dll重命名为_vcruntime140.dll
 将恶意的vcruntime140.dll和_vcruntime140.dl放在同一目录
 
