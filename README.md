@@ -33,7 +33,10 @@ go build -buildmode=c-shared -o vcruntime140.dll -ldflags="-extldflags=-Wl,{文�
 
 ![](https://raw.githubusercontent.com/famei/go-dllhijack/main/WPFLauncher.png)
 
+使用此go文件配合劫持即可加载shellcode
+[https://github.com/Ne0nd0g/go-shellcode/tree/master/cmd/UuidFromString](https://github.com/Ne0nd0g/go-shellcode/tree/master/cmd/UuidFromString)
+
 
 #参考文章
-##[golang实现dll恶意劫持转发](https://www.cnblogs.com/Akkuman/p/15339195.html#def-%E5%92%8C-exp-%E6%96%87%E4%BB%B6)
+#[golang实现dll恶意劫持转发](https://www.cnblogs.com/Akkuman/p/15339195.html#def-%E5%92%8C-exp-%E6%96%87%E4%BB%B6)
 
