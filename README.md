@@ -1,6 +1,5 @@
 # go-dllhijack
 ##基于go的简单劫持方法
-————————————————————————
 #使用
 ###在使用前请确保你系统上有GoLang python MinGW
 
